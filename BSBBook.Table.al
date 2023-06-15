@@ -4,7 +4,9 @@
 table 50100 "BSB Book"
 {
     Caption = 'Book';
+    DataCaptionFields = "No.", Description;
     DataClassification = CustomerContent;
+    LookupPageId = "BSB Book List";
 
     fields
     {
@@ -16,8 +18,13 @@ table 50100 "BSB Book"
         field(2; Description; Text[100])
         {
             Caption = 'Description';
+            trigger OnValidate()
+            begin
+                if ("Search Description" = UpperCase(xRec.Description)) or ("Search Description" = '') then
+                    "Search Description" := CopyStr(Description, 1, MaxStrLen("Search Description"));
+            end;
         }
-        field(3; "Search Description"; Code[100]) { Caption = 'Search Description'; } //TODO Search Descr. Impl.
+        field(3; "Search Description"; Code[100]) { Caption = 'Search Description'; }
         field(4; Blocked; Boolean) { Caption = 'Blocked'; }
         field(5; Type; Option)
         {
@@ -28,13 +35,12 @@ table 50100 "BSB Book"
         field(7; Created; Date)
         {
             Caption = 'Created';
-            Editable = false; //TODO Autom. befüllen
+            Editable = false;
         }
         field(8; "Last Date Modified"; Date)
         {
             Caption = 'Last Date Modified';
             Editable = false;
-            //TODO Autom. befüllen
         }
         field(10; Author; Text[50]) { Caption = 'Author'; }
         field(11; "Author Provision %"; Decimal)
@@ -56,13 +62,69 @@ table 50100 "BSB Book"
             MinValue = 0;
         }
         field(18; "Date of Publishing"; Date) { Caption = 'Date of Publishing'; }
-
-        //TODO Bücher dürfen nicht gelöscht
-        //TODO Zentrale TestBlocked-Funbktion
     }
 
     keys
     {
         key(PK; "No.") { Clustered = true; }
     }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "No.", Description, Author, "No. of Pages") { }
+    }
+
+    var
+        OnDeleteBookErr: Label 'A book cannot be deleted';
+
+    trigger OnInsert()
+    begin
+        Created := Today;
+    end;
+
+    trigger OnModify()
+    begin
+        "Last Date Modified" := Today;
+    end;
+
+    trigger OnRename()
+    begin
+        "Last Date Modified" := Today;
+    end;
+
+    trigger OnDelete()
+    begin
+        Error(OnDeleteBookErr);
+    end;
+
+    #region Procedures
+    procedure TestBlocked()
+    begin
+        TestField(Blocked, false);
+    end;
+
+    procedure TestBlocked(BookNo: Code[20])
+    var
+        BSBBook: Record "BSB Book";
+    begin
+        if not BSBBook.Get(BookNo) then
+            exit;
+        BSBBook.TestBlocked();
+    end;
+
+    procedure ShowCard()
+    begin
+        if not Rec.IsEmpty then
+            Page.RunModal(Page::"BSB Book Card", Rec);
+    end;
+
+    procedure ShowCard(BookNo: Code[20])
+    var
+        BSBBook: Record "BSB Book";
+    begin
+        if not BSBBook.Get(BookNo) then
+            exit;
+        BSBBook.ShowCard();
+    end;
+    #endregion Procedures
 }

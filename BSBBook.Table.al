@@ -26,11 +26,11 @@ table 50100 "BSB Book"
         }
         field(3; "Search Description"; Code[100]) { Caption = 'Search Description'; }
         field(4; Blocked; Boolean) { Caption = 'Blocked'; }
-        field(5; Type; Option)
+        field(5; Type; enum "BSB Book Type")
         {
             Caption = 'Type';
-            OptionMembers = " ",Hardcover,Paperback;
-            OptionCaption = ' ,Hardcover,Paperback';
+            // OptionMembers = " ",Hardcover,Paperback;
+            // OptionCaption = ' ,Hardcover,Paperback';
         }
         field(7; Created; Date)
         {

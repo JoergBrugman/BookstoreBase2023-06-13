@@ -10,85 +10,6 @@
       <rd:DataSourceID>6f5c4ac1-03f2-450d-bbd7-1e7f8c0305e2</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="SortingCustomersCustDateFilter">
-          <DataField>SortingCustomersCustDateFilter</DataField>
-        </Field>
-        <Field Name="CompanyName">
-          <DataField>CompanyName</DataField>
-        </Field>
-        <Field Name="RankedAccordingShowType">
-          <DataField>RankedAccordingShowType</DataField>
-        </Field>
-        <Field Name="ShowTypeNo">
-          <DataField>ShowTypeNo</DataField>
-        </Field>
-        <Field Name="ChartTypeNo">
-          <DataField>ChartTypeNo</DataField>
-        </Field>
-        <Field Name="CustFilter_Customer">
-          <DataField>CustFilter_Customer</DataField>
-        </Field>
-        <Field Name="CustFilter">
-          <DataField>CustFilter</DataField>
-        </Field>
-        <Field Name="No_Customer">
-          <DataField>No_Customer</DataField>
-        </Field>
-        <Field Name="Name_Customer">
-          <DataField>Name_Customer</DataField>
-        </Field>
-        <Field Name="SalesLCY_Customer">
-          <DataField>SalesLCY_Customer</DataField>
-        </Field>
-        <Field Name="SalesLCY_CustomerFormat">
-          <DataField>SalesLCY_CustomerFormat</DataField>
-        </Field>
-        <Field Name="BalanceLCY_Customer">
-          <DataField>BalanceLCY_Customer</DataField>
-        </Field>
-        <Field Name="BalanceLCY_CustomerFormat">
-          <DataField>BalanceLCY_CustomerFormat</DataField>
-        </Field>
-        <Field Name="TotalSales">
-          <DataField>TotalSales</DataField>
-        </Field>
-        <Field Name="TotalSalesFormat">
-          <DataField>TotalSalesFormat</DataField>
-        </Field>
-        <Field Name="TotalBalance">
-          <DataField>TotalBalance</DataField>
-        </Field>
-        <Field Name="TotalBalanceFormat">
-          <DataField>TotalBalanceFormat</DataField>
-        </Field>
-        <Field Name="CustomerTop10ListCaption">
-          <DataField>CustomerTop10ListCaption</DataField>
-        </Field>
-        <Field Name="CurrReportPageNoCaption">
-          <DataField>CurrReportPageNoCaption</DataField>
-        </Field>
-        <Field Name="TotalCaption">
-          <DataField>TotalCaption</DataField>
-        </Field>
-        <Field Name="TotalSalesCaption">
-          <DataField>TotalSalesCaption</DataField>
-        </Field>
-        <Field Name="PercentofTotalSalesCaption">
-          <DataField>PercentofTotalSalesCaption</DataField>
-        </Field>
-        <Field Name="BSBCountryRegionCode_Customer">
-          <DataField>BSBCountryRegionCode_Customer</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -113,7 +34,7 @@
             <rd:DefaultName>Textbox4</rd:DefaultName>
             <Top>5.29165cm</Top>
             <Height>25pt</Height>
-            <Width>510pt</Width>
+            <Width>782.3622pt</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -131,16 +52,16 @@
                   <Width>78.60288pt</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>141.59496pt</Width>
+                  <Width>230.99081pt</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>96.60072pt</Width>
+                  <Width>157.58951pt</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>96.60072pt</Width>
+                  <Width>157.58951pt</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>96.60072pt</Width>
+                  <Width>157.58951pt</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -296,6 +217,7 @@
                                   <Style>
                                     <FontFamily>Segoe UI Semibold</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Color>Tomato</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -314,6 +236,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -2764,10 +2687,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>23.95138cm</Height>
+        <Height>6.17359cm</Height>
         <Style />
       </Body>
-      <Width>510pt</Width>
+      <Width>27.6cm</Width>
       <Page>
         <PageHeader>
           <Height>3.10444cm</Height>
@@ -2792,9 +2715,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox41</rd:DefaultName>
-              <Left>11.26657cm</Left>
+              <Left>17.28341cm</Left>
               <Height>2pt</Height>
-              <Width>6.67778cm</Width>
+              <Width>10.24401cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -2825,9 +2748,9 @@
                 </Paragraph>
               </Paragraphs>
               <Top>0.45861cm</Top>
-              <Left>11.26657cm</Left>
+              <Left>17.28341cm</Left>
               <Height>0.38806cm</Height>
-              <Width>6.67778cm</Width>
+              <Width>10.24401cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <VerticalAlign>Top</VerticalAlign>
@@ -2852,7 +2775,7 @@
                 </Paragraph>
               </Paragraphs>
               <Height>20pt</Height>
-              <Width>10.46157cm</Width>
+              <Width>16.0485cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <VerticalAlign>Top</VerticalAlign>
@@ -2878,7 +2801,7 @@
               </Paragraphs>
               <Top>1.83444cm</Top>
               <Height>0.38806cm</Height>
-              <Width>10.46157cm</Width>
+              <Width>16.0485cm</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
@@ -2904,7 +2827,7 @@
               </Paragraphs>
               <Top>1.44639cm</Top>
               <Height>0.38806cm</Height>
-              <Width>10.46157cm</Width>
+              <Width>16.0485cm</Width>
               <ZIndex>4</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
@@ -2930,7 +2853,7 @@
               </Paragraphs>
               <Top>1.05833cm</Top>
               <Height>11pt</Height>
-              <Width>10.46157cm</Width>
+              <Width>16.0485cm</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
@@ -2958,9 +2881,9 @@
                 </Paragraph>
               </Paragraphs>
               <Top>0.02778in</Top>
-              <Left>11.26657cm</Left>
+              <Left>17.28341cm</Left>
               <Height>11pt</Height>
-              <Width>6.67778cm</Width>
+              <Width>10.24401cm</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border />
@@ -2989,9 +2912,9 @@
                 </Paragraph>
               </Paragraphs>
               <Top>0.84667cm</Top>
-              <Left>11.26657cm</Left>
+              <Left>17.28341cm</Left>
               <Height>0.38806cm</Height>
-              <Width>6.67778cm</Width>
+              <Width>10.24401cm</Width>
               <ZIndex>7</ZIndex>
               <Style>
                 <VerticalAlign>Top</VerticalAlign>
@@ -3019,7 +2942,7 @@
               <rd:DefaultName>Textbox3</rd:DefaultName>
               <Top>0.70556cm</Top>
               <Height>10pt</Height>
-              <Width>10.46157cm</Width>
+              <Width>16.0485cm</Width>
               <ZIndex>8</ZIndex>
               <Style>
                 <Border>
@@ -3049,7 +2972,7 @@
               <rd:DefaultName>Textbox4</rd:DefaultName>
               <Top>2.2225cm</Top>
               <Height>25pt</Height>
-              <Width>10.46157cm</Width>
+              <Width>16.0485cm</Width>
               <ZIndex>9</ZIndex>
               <Style>
                 <Border>
@@ -3062,13 +2985,13 @@
           </ReportItems>
           <Style />
         </PageHeader>
-        <PageHeight>29.7cm</PageHeight>
-        <PageWidth>21cm</PageWidth>
+        <PageHeight>21cm</PageHeight>
+        <PageWidth>29.7cm</PageWidth>
         <InteractiveHeight>11in</InteractiveHeight>
         <InteractiveWidth>8.5in</InteractiveWidth>
-        <LeftMargin>1.5cm</LeftMargin>
-        <RightMargin>1.25cm</RightMargin>
-        <TopMargin>1cm</TopMargin>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>1cm</RightMargin>
+        <TopMargin>2cm</TopMargin>
         <BottomMargin>1cm</BottomMargin>
         <Style />
       </Page>
@@ -3203,4 +3126,83 @@ End Function</Code>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>b0b59414-8f75-4e25-a7c8-b230383b57c8</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="SortingCustomersCustDateFilter">
+          <DataField>SortingCustomersCustDateFilter</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="RankedAccordingShowType">
+          <DataField>RankedAccordingShowType</DataField>
+        </Field>
+        <Field Name="ShowTypeNo">
+          <DataField>ShowTypeNo</DataField>
+        </Field>
+        <Field Name="ChartTypeNo">
+          <DataField>ChartTypeNo</DataField>
+        </Field>
+        <Field Name="CustFilter_Customer">
+          <DataField>CustFilter_Customer</DataField>
+        </Field>
+        <Field Name="CustFilter">
+          <DataField>CustFilter</DataField>
+        </Field>
+        <Field Name="No_Customer">
+          <DataField>No_Customer</DataField>
+        </Field>
+        <Field Name="Name_Customer">
+          <DataField>Name_Customer</DataField>
+        </Field>
+        <Field Name="SalesLCY_Customer">
+          <DataField>SalesLCY_Customer</DataField>
+        </Field>
+        <Field Name="SalesLCY_CustomerFormat">
+          <DataField>SalesLCY_CustomerFormat</DataField>
+        </Field>
+        <Field Name="BalanceLCY_Customer">
+          <DataField>BalanceLCY_Customer</DataField>
+        </Field>
+        <Field Name="BalanceLCY_CustomerFormat">
+          <DataField>BalanceLCY_CustomerFormat</DataField>
+        </Field>
+        <Field Name="TotalSales">
+          <DataField>TotalSales</DataField>
+        </Field>
+        <Field Name="TotalSalesFormat">
+          <DataField>TotalSalesFormat</DataField>
+        </Field>
+        <Field Name="TotalBalance">
+          <DataField>TotalBalance</DataField>
+        </Field>
+        <Field Name="TotalBalanceFormat">
+          <DataField>TotalBalanceFormat</DataField>
+        </Field>
+        <Field Name="CustomerTop10ListCaption">
+          <DataField>CustomerTop10ListCaption</DataField>
+        </Field>
+        <Field Name="CurrReportPageNoCaption">
+          <DataField>CurrReportPageNoCaption</DataField>
+        </Field>
+        <Field Name="TotalCaption">
+          <DataField>TotalCaption</DataField>
+        </Field>
+        <Field Name="TotalSalesCaption">
+          <DataField>TotalSalesCaption</DataField>
+        </Field>
+        <Field Name="PercentofTotalSalesCaption">
+          <DataField>PercentofTotalSalesCaption</DataField>
+        </Field>
+        <Field Name="BSBCountryRegionCode_Customer">
+          <DataField>BSBCountryRegionCode_Customer</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

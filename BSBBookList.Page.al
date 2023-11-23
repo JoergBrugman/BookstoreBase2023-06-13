@@ -39,5 +39,26 @@ page 50101 "BSB Book List"
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+            action(BookSale)
+            {
+                Caption = 'Starts Sales Process';
+                Image = Process;
+                ToolTip = 'Executes the Start Sales Process action.';
 
+                trigger OnAction()
+                var
+                    BSBBookTypeProcessMgmt: Codeunit "BSB Book Type Process Mgmt.";
+                    BSBBookTypeProcess: Interface "BSB Book Type Process";
+                begin
+                    BSBBookTypeProcess := BSBBookTypeProcessMgmt.GetHandler(Rec);
+                    BSBBookTypeProcess.StartDeployBook();
+                    BSBBookTypeProcess.StartDeliverBook();
+                end;
+            }
+        }
+    }
 }

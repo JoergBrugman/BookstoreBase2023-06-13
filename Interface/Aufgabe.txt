@@ -1,0 +1,6 @@
+TODO AUFGABE: Interface in der Bookstore Base Implementierungen
+
+1. Interface "Book Type Process" mit den Funktionen "StartDeployBook()" und "StartDeliverBook()" definieren.
+2. Konkrete Implementierungen dieses Interface für Hardcover, Paperback, Ebook.
+3. Enum in der Bookstore Base mit Interface-Impl. versehen.
+4. In der Book List eine Aktion für den Logistikprozess ("StartDeployBook()" und "StartDeliverBook()") 

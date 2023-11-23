@@ -11,5 +11,7 @@
         "${PerTenantExtensionCop}"
     ],
     "al.enableCodeAnalysis": true,
-    "editor.snippetSuggestions": "bottom"
+    "editor.snippetSuggestions": "bottom",
+    "al-xml-doc.CheckObjectDocumentationInformationLevel": "Disabled",
+    "CRS.WebServerInstancePort": "8080"
 }

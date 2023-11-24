@@ -75,7 +75,7 @@ table 50100 "BSB Book"
     }
 
     var
-        OnDeleteBookErr: Label 'A book cannot be deleted';
+        OnDeleteBookNewErr: Label 'A book cannot be deleted';
 
     trigger OnInsert()
     begin
@@ -99,7 +99,7 @@ table 50100 "BSB Book"
         OnBeforeOnDelete(Rec, IsHandled);
         if IsHandled then
             exit;
-        Error(OnDeleteBookErr);
+        Error(OnDeleteBookNewErr);
     end;
 
     #region Procedures
